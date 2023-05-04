@@ -1,0 +1,68 @@
+.footer {
+  height: 100px;
+  width: 100%;
+  color: rgba(99, 98, 119, 1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-bottom: 24px;
+}
+
+.footer::before {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(78, 82, 81, 0.3);
+  box-shadow: 0 0 10px 1px rgba(43, 199, 247, 0.3);
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: repeat url('../../../assets/logo.png');
+  background-position: 60%;
+  background-size: 130%;
+  transition: all 0.4s;
+  &:hover {
+    background-size: 150%;
+    border-radius: 5%;
+    transition: all 0.4s;
+  }
+}
+.logoBlock {
+  display: flex;
+  gap: 32px;
+  justify-content: baseline;
+  align-items: center;
+}
+.logoText {
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--wp--preset--color--vivid-cyan-blue);
+}
+
+.logo_link {
+  flex-basis: 25%;
+}
+a {
+  text-decoration: none;
+letter-spacing: 0.05em;
+ color:rgb(104, 103, 109);
+  transition: 0.3s;
+}
+a:hover {
+ text-decoration: underline;
+ color: rgb(91, 91, 204);
+ transition: 0.3s;
+}
+
+.footer__item {
+  
+@media (max-width: 500px) {
+ text-align: center;
+ max-width: 400px;
+}
+}

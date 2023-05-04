@@ -1,0 +1,41 @@
+.container {
+  max-width: 1280px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  overflow-x:visible;
+  
+}
+
+.root {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  gap: 48px; 
+
+  @media (max-width: 1000px) {
+    gap:12px;
+    padding: 8px;
+  }
+
+  @media (max-width: 450px) {
+    gap:12px;   
+  }
+}
+
+.single_title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.single_text {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
