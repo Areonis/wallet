@@ -1,4 +1,5 @@
 import imageAll from '../assets/all.png'
+import React from 'react'
 
 export const data = [
   {
@@ -71,7 +72,7 @@ export const data_footer = {
 }
 
 export const singleCenterBlock = {
-  title: 'Кошелёк',
+  title: 'Электронный кошелёк',
   text: 'Это удобное приложение для платежей, покупок и переводов.',
   action: () => (
     <div>

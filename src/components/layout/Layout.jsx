@@ -1,3 +1,4 @@
+import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './header/Header'
 import Footer from './footer/Footer'
@@ -17,7 +18,7 @@ export default function Layout() {
             title={singleCenterBlock.title}
             text={singleCenterBlock.text}
             className="white"
-            flag={true}
+            flag={false}
           />
           <ImageBlock
             className="linear_1"
